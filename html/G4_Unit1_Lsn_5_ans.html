@@ -1,10 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+    <title>Grammar Workshop</title>
 
+    <link href="//static.assets.sadlierconnect.com/sc-content/css/screen_vw_enhancement_achieve_v.1.84.css"
+          rel="stylesheet" title="screen" type="text/css">
+    <script src='//static.assets.sadlierconnect.com/sc-content/javascript/jquery-1.8.3.min.js'
+            type='text/javascript'></script>
+    <style>
+        .none li {
+            list-style-type: none !important;
+        }
+
+        .sentencesG4 ul li {
+            padding-bottom: 15px;
+        }
+
+        .answer-fill {
+            width: 60px;
+            text-align: center;
+            display: inline-block;
+            color: #ec008c;
+            border-bottom: 1px solid #10165d;
+            font-family: 'HelveticaNeue-Bold';
+            line-height: 8px;
+            padding-bottom: 4px;
+        }
+
+        .sentencesG4 .none .answer-fill {
+            width: 180px;
+        }
+
+        .sentencesG4 .decimal .answer-fill {
+            width: 40px;
+        }
+
+        img.title-unit {
+            float: left;
+            width: 70px;
+            height: 30px;
+        }
+
+        h4.sentence {
+            padding: 4px;
+            color: #0080c5;
+            margin-left: 80px;
+            font_size: 18px;
+        }
+
+        .Lesson {
+            color: #10165d;
+        }
+
+        .Lesson span {
+            color: #70739e;
+            font-weight: bold;
+        }
+
+
+        .remember {
+            background-color: #ddeef7;
+            padding: 0 0 10px 30px !important;
+            font-weight: normal;
+            font-family: normal;
+            color: #10165d;
+            width: auto;
+        }
+
+        .remember p {
+            margin: 0;
+            padding-right: 30px;
+        }
+
+        p.answer {
+            color: #10165d;
+        }
+
+        p.answer i {
+        }
+
+        p.answer i b {
+            color: #10165d;
+        }
+
+        .content {
+            color: #10165d;
+        }
+
+        ul.decimal {
+            margin: 0 0 1.5em;
+            padding: 0;
+            counter-reset: item;
+        }
+
+        ul.decimal > li {
+            list-style-type: none;
+            counter-increment: item;
+        }
+
+        ul.decimal > li:before {
+            display: inline-block;
+            width: 1.5em;
+            padding-right: 0.5em;
+            font-weight: bold;
+            text-align: right;
+            content: counter(item) ".";
+        }
+
+        .Underline-1 {
+            border-bottom: solid 1px;
+            border-color: #ec008c;
+        }
+
+        #content img {
+            max-width: 100% !important;
+        }
+
+        .tb1 {
+            margin-top: 20px;
+        }
+
+        .tb2 {
+            margin-top: 30px;
+        }
+
+        .tx1 {
+            border-bottom: solid 1px;
+            border-color: #ec008c;
+        }
+
+        .grade_5 span.answer-fill {
+            width: 270px;
+        }
+
+        .grade_5 span.margin-right{
+            margin-right: 80px;
+        }
+        .grade_5 span.padding-left{
+            padding-left: 31px;
+        }
+
+        .grade_5>.Lesson{
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+
+
+        .grade_5>.content>ul>li{
+            line-height: 30px;
+         }
+    </style>
+</head>
+<body class="vocabulary-workshop-achieve level-d">
+<div id="pagecontainer">
+    <div class="boxshadow" id="page">
+        <!--Header-->
+        <div id="title" class="withline">
+            <div class="toc_name">UNIT 1</div>
+        </div>
+        <div class="clear"></div>
+
+        <div id="content">
+            <div class="grade_5">
+                <img src="../images/grammar.png" alt="">
+                <div>
+                    <img src="../images/unit1.png" alt="" class="title-unit">
+                    <h4 class="sentence">SENTENCES</h4>
+                </div>
+                <div class="clear"></div>
+
+                <div class="Lesson">
+                    <span>Lesson 5:</span>
+                    <b>Compound Sentences</b>(pp. 32-35)
+                </div>
+                <div class="remember">
+                    <img src="../images/remember.png" alt="">
+                    <p>
+                        A <b>simple sentence</b> has one subject and one predicate. It expresses one complete idea. <br>
+                        A <b>compound sentence</b> combines two simple sentences that have related ideas. <br>
+                        A conjunction (<i>and, but, or or</i>) joins the two sentences. Always use a comma before the
+                        conjunction in a compound sentence.
+                    </p>
+                </div>
+                <p class="answer">
+                    <i>Read each incomplete compound sentence. Underline the sentence below that best relates to it.
+                        Then combine the related sentence to form a compound sentence. Write the compound sentence on
+                        the line.</i>
+                </p>
+
+                <div class="content">
+                    <ul class="decimal">
+                        <li>
+                            <span>My cousin came to visit, and </span>
+                            <span class="answer-fill"><b> we talked all afternoon.</b></span>
+                            <br>
+                            <span class="margin-right padding-left"><span class=" Underline-1"> We talked all afternoon</span></span>
+                            <span>Her birthday is in January.</span>
+                        </li>
+
+                        <li>
+                            <span> We need to leave now, or </span>
+                            <span class="answer-fill"><b> we will be late for the movie.</b></span>
+                            <br>
+                            <span class="margin-right padding-left"> We enjoyed the movie.</span>
+                            <span><span class=" Underline-1"> We will be late for the movie.</span></span>
+                        </li>
+
+                        <li>
+                            <span>I like books about sports, but </span>
+                            <span class="answer-fill"><b>I like mysteries even better.</b></span>
+                            <br>
+                            <span class="margin-right padding-left"><span class=" Underline-1">I like mysteries even better.</span></span>
+                            <span>You can find them in the library.</span>
+                        </li>
+
+                        <li>
+                            <span>Ben’s family brought salad to the picnic, and</span>
+                            <span class="answer-fill"><b>Yolanda’s family brought hot dogs.</b></span>
+                            <br>
+                            <span class="margin-right padding-left"><span class=" Underline-1">Yolanda’s family brought hot dogs.</span></span>
+                            <span>They forgot to bring napkins.</span>
+                        </li>
+
+                        <li>
+                            <span>You can borrow my umbrella, or </span>
+                            <span class="answer-fill"><b>you can wait inside until the rain stops.</b></span>
+                            <br>
+                            <span class="margin-right padding-left"><span class=" Underline-1"> You can wait inside until the rain stops.</span></span>
+                            <span>My raincoat is yellow.</span>
+                        </li>
+
+                        <li>
+                            <span>Angela was sick yesterday, but </span>
+                            <span class="answer-fill"><b> she feels fine today.</b></span>
+                            <br>
+                            <span class="margin-right padding-left">  She sent me a postcard.</span>
+                            <span><span class=" Underline-1"> She feels fine today.</span></span>
+                        </li>
+
+                        <li>
+                            <span>We can take the bus to the library, or </span>
+                            <span class="answer-fill"><b> we can walk.</b></span>
+                            <br>
+                            <span class="margin-right padding-left"> We can apply for library cards.</span>
+                            <span><span class=" Underline-1"> We can walk.</span></span>
+                        </li>
+
+                        <li>
+                            <span>Lightning flashed, and </span>
+                            <span class="answer-fill"><b> thunder roared.</b></span>
+                            <br>
+                            <span class="margin-right padding-left"> Thunder roared.</span>
+                            <span><span class=" Underline-1"> I planted flowers.</span></span>
+                        </li>
+
+                        <li>
+                            <span>I opened the door, and </span>
+                            <span class="answer-fill"><b> the cat ran out.</b></span>
+                            <br>
+                            <span class="margin-right padding-left"> My pen ran out of ink.</span>
+                            <span><span class=" Underline-1"> The cat ran out</span></span>
+                        </li>
+
+                        <li>
+                            <span>The pond was frozen, but </span>
+                            <span class="answer-fill"><b> the ice was too thin for skating.</b></span>
+                            <br>
+                            <span class="margin-right padding-left"> Ice-skating is a popular sport.</span>
+                            <span><span class=" Underline-1"> The ice was too thin for skating.</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--Footer-->
+        <div class="resourceFooterSection">
+            <div class="program_info">
+                <span class="program_footer_image"></span>
+                <span class="gray_separator"></span>
+                <span class="program_footer_name">Grade 4</span>
+            </div>
+            <div class="footer_copyright">
+                Copyright © by William H. Sadlier, Inc. All rights reserved.
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/jquery-ui.js" type="text/javascript"></script>
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/jquery.ba-postmessage.min.js"></script>
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/highlight_digital_resource.js"
+        type="text/javascript"></script>
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/fontsize_digital_resource_v1.2.js"
+        type="text/javascript"></script>
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/one.js" type="text/javascript"></script>
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/crossdomain_v1.12.js"
+        type="text/javascript"></script>
 </body>
 </html>
