@@ -43,6 +43,13 @@
             height: 30px;
         }
 
+        h4.sentence {
+            padding: 4px;
+            color: #0080c5;
+            margin-left: 80px;
+            font_size: 18px;
+        }
+
         .Lesson {
             color: #10165d;
         }
@@ -52,22 +59,26 @@
             font-weight: bold;
         }
 
+
         .remember {
             background-color: #ddeef7;
             padding: 0 0 10px 30px !important;
             font-weight: normal;
+            font-family: normal;
             color: #10165d;
             width: auto;
         }
 
         .remember p {
             margin: 0;
-            padding-right: 15px;
+            padding-right: 30px;
         }
-
 
         p.answer {
             color: #10165d;
+        }
+
+        p.answer i {
         }
 
         p.answer i b {
@@ -97,46 +108,54 @@
             text-align: right;
             content: counter(item) ".";
         }
+
+        .Underline-2 {
+            border-bottom-style: double;
+            border-color: #ec008c;
+        }
+
+        .Underline-1 {
+            border-bottom: solid 1px;
+            border-color: #ec008c;
+        }
+
         #content img {
             max-width: 100% !important;
         }
 
+        .tb1 {
+            margin-top: 20px;
+        }
+
+        .tb2 {
+            margin-top: 30px;
+        }
+
+        .tx1 {
+            border-bottom: solid 1px;
+            border-color: #ec008c;
+        }
+
         .grade_4 span.answer-fill {
-            width: 330px;
+            width: 340px;
         }
 
         .grade_4 span.margin-right{
             margin-right: 80px;
         }
         .grade_4 span.padding-left{
-            padding-left: 37px;
+            padding-left: 31px;
         }
+
+        .grade_4>.Lesson{
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+
 
         .grade_4>.content>ul>li{
             line-height: 30px;
-        }
-        h4.sentences {
-            padding: 4px;
-            color: #0080c5;
-            margin: 0;
-            font-size: 18px;
-        }
-
-        img.title-unit {
-            float: left;
-            width: 70px;
-            height: 30px;
-            margin-right: 15px;
-        }
-
-        .unit {
-            margin-top: 15px;
-        }
-
-        .Lesson {
-            color: #10165d;
-            margin-bottom: 20px;
-        }
+         }
     </style>
 </head>
 <body class="vocabulary-workshop-achieve level-d">
@@ -146,16 +165,20 @@
         <div id="title" class="withline">
             <div class="toc_name">UNIT 1</div>
         </div>
+        <div class="clear"></div>
+
         <div id="content">
             <div class="grade_4">
-                <img src="../images/grammarWork_LevelBlue.png" alt="">
-                <div class="unit">
+                <img src="../images/grammar.png" alt="">
+                <div>
                     <img src="../images/unit1.png" alt="" class="title-unit">
-                    <h4 class="sentences">SENTENCES</h4>
+                    <h4 class="sentence">SENTENCES</h4>
                 </div>
+                <div class="clear"></div>
+
                 <div class="Lesson">
-                    <span>Lessson 7: </span>
-                    <b>Compound Sentences</b> (pp. 32-35)
+                    <span>Lesson 7:</span>
+                    <b>Compound Sentences</b>(pp. 32-35)
                 </div>
                 <div class="remember">
                     <img src="../images/remember.png" alt="">
@@ -169,8 +192,7 @@
                 <p class="answer">
                     <i>Read each incomplete compound sentence. Underline the sentence below that best relates to it.
                         Then combine the related sentence to form a compound sentence. Write the compound sentence on
-                        the line.
-                    </i>
+                        the line.</i>
                 </p>
 
                 <div class="content">
@@ -262,6 +284,7 @@
                 Copyright © by William H. Sadlier, Inc. All rights reserved.
             </div>
         </div>
+
     </div>
 </div>
 <script src="//static.assets.sadlierconnect.com/sc-content/javascript/jquery-ui.js" type="text/javascript"></script>
