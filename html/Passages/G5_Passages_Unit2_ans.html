@@ -69,7 +69,7 @@
             position: absolute;
             right: -40px;
             top: 38px;
-            word-spacing: initial;
+            letter-spacing: initial;
         }
 
         .proofeadingMarks p{
@@ -89,6 +89,8 @@
             transform: translate(-50%);
             font-size: 13px;
             font-family: 'HelveticaNeue-Bold';
+            /*left: 50%;*/
+            font-style: italic;
         }
 
         .top-text img{
@@ -99,11 +101,6 @@
             height:24px;
         }
 
-        .top-text img.chamthang{
-            width: 5px;
-            top: 0px;
-            right: 0px;
-        }
         .test::before{
             content: '';
             background: url("images/345.png") center no-repeat;
@@ -124,8 +121,16 @@
             position: absolute;
             height: 23px;
             width: 16px;
-            right:-15px;
+            right:-12px;
             top: -11.6px;
+        }
+
+        .t1:after, .t5:before, .t5:after{
+            content: '';
+            width:0;
+        }
+        .t1 img.bottom-images{
+            left:-12px;
         }
 
         img.bottom-images{
@@ -133,50 +138,41 @@
             top: 18px;
             right:-3px;
             width:12px;
-        }
-        .t1:after{
-            content: '';
-            width:0px;
+            left: 50%;
         }
 
-        .t3:before{
-            content: '';
-            width:0px;
+        .b1{
+            border-top: none !important;
+            border-bottom: none !important;
         }
-
-        .t2::after{
-            background: url(images/123-2.png)center no-repeat;
-            background-size: 100% 100%;
-            right:-18px;
-        }
-
-        .test img.gachcheo{
+        .t5 img.dauphay {
+            width: 6px;
+            margin-left: 4px;
             position: absolute;
-            width:12px;
+            top: 15px;
+            left: -6px;
+        }
+        .t5 img.bottom-images{
+            top: 27px;
+            left: -6px;
+        }
+        .bagach {
+            position: relative;
         }
 
-        .top-text img.vongtron{
-            top: 0;
-            width: 15px;
-            height: 15px;
-        }
-
-        .bagach{
-              position: relative;
-          }
-        .bagach::after{
+        .bagach::after {
             content: '';
-            background: url(images/3gach.png)center no-repeat;
+            background: url(images/3gach.png) center no-repeat;
             background-size: 100% 100%;
             width: 13px;
             height: 8px;
             position: absolute;
             top: 17px;
-            right: 0px;
+            right: -4px;
         }
-        .b1{
-            border-top: none !important;
-            border-bottom: none !important;
+        .test img.gachcheo {
+            position: absolute;
+            width: 12px;
         }
 
         #content img.levels{
@@ -188,50 +184,42 @@
 <div id="pagecontainer">
     <div class="boxshadow" id="page">
         <div id="title" class="withline">
-            <div class="toc_name">Unit 1</div>
+            <div class="toc_name">Unit 2</div>
         </div>
         <div class="clear"></div>
         <div id="content">
-            <img src="images/grammarWork_LevelGreen.png" alt="" class="levels">
+            <img src="images/grammarWork_LevelBlue.png" alt="" class="levels">
             <div class="unit">
-                <img src="images/unit1.png" alt="" class="title-unit">
-                <h4 class="sentences">SentenceS</h4>
+                <img src="images/unit-2.png" alt="" class="title-unit">
+                <h4 class="sentences">NOUNS</h4>
             </div>
             <div class="clear"></div>
             <div class="Lesson">
-                <span><b>Proofreading</b> (Lessons 1–8, pp. 8–39)</span>
+                <span><b>Proofreading</b> (Lessons 10–14, pp. 48–67)</span>
             </div>
-            <p><i>Read the paragraphs below. Find the run-on sentence and the mistakes in the use of capital letters, commas, and end marks. Including the run-on sentence, there are 12 mistakes. Use the proofreading marks to correct the mistakes. Count the run-on sentence as one mistake.</i></p>
+            <p><i>Read the paragraphs below. Find the mistakes in spelling and in the use <br>
+                of capital letters and punctuation. There are 12 mistakes in all. Use the <br>
+                proofreading marks to correct them.</i></p>
 
             <div class="content">
                 <div class="content-container">
-                    <p><i> <span class="bottom-b" style="width:483px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Did you go to the parade last Saturday<span class="test t3"><span class="top-text"><img src="images/1hoi.png" alt=""></span>.<img src="images/2.png" alt="" class="bottom-images"></span> Some of</span><span class="bottom-b b1"></span>
-                        <span class="bottom-b" style="width:483px;">the floats were amazing. One float was in the shape of a </span><span class="bottom-b b1"></span>
-                        <span class="bottom-b" style="width:483px;">rocket ship<span class="test t1"><img src="images/abc.png" alt="" class="bottom-images" height="18px"></span> and another was in the shape of a fire truck. </span></i></p>
+                    <p><i> <span class="bottom-b" style="width:483px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pronto is our new puppy. His fur is soft, and his</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b" style="width:483px;">tail is long. His eyes are bright, and his <span class="test"><span class="top-text">teeth</span>tooths<img class="bottom-images" src="images/2.png" alt=""></span> are sharp.</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b" style="width:483px;">Pronto is our <span class="test"><span class="top-text">family’s</span>familys’<img class="bottom-images" src="images/2.png" alt=""></span> favorite pet ever. I love <span class="test"><span class="top-text">puppies</span>puppys<img class="bottom-images" src="images/2.png" alt=""></span>, but</span></i></p>
 
-                    <p><i><span class="bottom-b" style="width:483px;">One float had a dragon with feathers of all colors, <span class="test t1"><img
-                            src="images/00.png" alt="" class="gachcheo"></span>And one</span><span class="bottom-b b1"></span>
-                        <span class="bottom-b" style="width:483px;">had a princess in a castle. I liked the float with the dinosaur<span class="test t1"><img
-                                src="images/abc.png" alt="" class="bottom-images"></span></span><span class="bottom-b b1"></span>
-                        <span class="bottom-b">but my favorite was the ship with pirates.</span></i></p>
+                    <p><i><span class="bottom-b" style="width:483px;">they can be trouble. I found that out today.</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b" style="width:483px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pronto and I were playing under the <span class="test"><span class="top-text">bushes</span>bushs<img class="bottom-images" src="images/2.png" alt=""></span> in our yard.</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b">When the phone rang, I went into the house. Dr. Ramirez<span class="test t5"><img class="dauphay" src="images/6.png" alt=""><img class="bottom-images" src="images/2.png" alt=""></span> our dentist<span class="test t5"><img class="dauphay" src="images/6.png" alt=""><img class="bottom-images" src="images/2.png" alt=""></span></span></i></p>
 
-                    <p><i><span class="bottom-b">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although the marching bands were loud, they were terrific.</span><span class="bottom-b b1"></span>
-                        <span class="bottom-b"> We were proud of our school band<span class="test t1"><img src="images/abc.png"
-                                                                                                           alt="" class="bottom-images"></span>. <span class="test t1"><img
-                                src="images/00.png" alt="" class="gachcheo"></span>But the last band had the best</span></i></p>
-                    <p><i><span class="bottom-b">costumes. The band members were dressed as astronauts<span class="test t1"><span class="top-text"><img
-                            src="images/3.png" alt="" class="vongtron"></span><img
-                            src="images/2.png" alt="" class="bottom-images"></span></span><span class="bottom-b b1"></span>
-                        <span class="bottom-b">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The clowns were so funny. <span class="bagach">d</span>id you see the clown on the big</span></i></p>
-                    <p><i><span class="bottom-b">purple bicycle? he did tricks in front of my little sister, and he gave</span></i></p>
-                    <p><i><span class="bottom-b">her a balloon. Wow, she was so excited .<span class="test t1"><span class="top-text"><img src="images/chamthang.png" alt="" class="chamthang"></span><img src="images/2.png" alt="" class="bottom-images"></span></span><span class="bottom-b b1"></span>
-                        <span class="bottom-b">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We headed home for a wonderful picnic after the parade ended.</span> </i></p>
-                    <p><i><span class="bottom-b">We ate hot dogs and corn<span class="test t1"><span class="top-text"><img
-                            src="images/3.png" alt="" class="vongtron"></span><img
-                            src="images/2.png" alt="" class="bottom-images"></span> <span class="bagach">w</span>e also ate the pies my mom made. <span class="bagach">m</span>y aunt</span><span class="bottom-b b1"></span>
-                        <span class="bottom-b">and uncle put on music, and we danced. What a special day?<span class="test t2"><span class="top-text"><img
-                                src="images/chamthang.png" alt="" class="chamthang"></span><img
-                                src="images/2.png" alt="" class="bottom-images"></span></span><span class="bottom-b b1"></span>
+                    <p><i><span class="bottom-b">had called to cancel my father’s <span class="test t1"><img class="gachcheo" src="images/00.png" alt=""></span>Appointment.</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Back in the yard, I couldn’t find Pronto anywhere. Then I noticed</span></i></p>
+                    <p><i><span class="bottom-b">the gate was open. Pronto must have gone down Maple <span class="bagach">a</span>venue<span class="test t5"><img class="dauphay" src="images/6.png" alt=""><img class="bottom-images" src="images/2.png" alt=""></span> a very</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b">busy street! I ran down the sidewalk all the way to <span class="bagach">r</span>eynold’s Park.</span></i></p>
+                    <p><i><span class="bottom-b">None of the <span class="test"><span class="top-text">children</span>childrens<img class="bottom-images" src="images/2.png" alt=""></span> along the way had seen Pronto.</span></i></p>
+                    <p><i><span class="bottom-b">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I decided to run home to get my <span class="test"><span class="top-text">mom’s</span>moms<img class="bottom-images" src="images/2.png" alt=""></span> help. To save time, I cut</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b">through a few <span class="test"><span class="top-text">neighbors’</span>neighbor’s<img class="bottom-images" src="images/2.png" alt=""></span> yards. When I got home, a surprise was</span> </i></p>
+                    <p><i><span class="bottom-b">waiting for me. My little puppy met me at the gate!</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b">&nbsp;</span><span class="bottom-b b1"></span>
                         <span class="bottom-b">&nbsp;</span> </i></p>
                     <p><i><span class="bottom-b">&nbsp;</span><span class="bottom-b b1"></span>
                         <span class="bottom-b">&nbsp;</span> </i></p>
@@ -253,7 +241,7 @@
             <div class="program_info">
                 <span class="program_footer_image"></span>
                 <span class="gray_separator"></span>
-                <span class="program_footer_name">Grade 3</span>
+                <span class="program_footer_name">Grade 5</span>
             </div>
             <div class="footer_copyright">
                 Copyright © by William H. Sadlier, Inc. All rights reserved.
