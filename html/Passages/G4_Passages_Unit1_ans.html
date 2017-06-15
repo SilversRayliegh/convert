@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+    <title>Grammar Workshop</title>
+
+    <link href="//static.assets.sadlierconnect.com/sc-content/css/screen_vw_enhancement_achieve_v.1.84.css"
+          rel="stylesheet" title="screen" type="text/css">
+    <script src='//static.assets.sadlierconnect.com/sc-content/javascript/jquery-1.8.3.min.js'
+            type='text/javascript'></script>
+    <link rel="stylesheet" href="../screen_vw_enhancement_achieve_v.1.84.css">
+    <style>
+
+        .Lesson {
+            color: #10165d;
+            margin-bottom: 20px;
+        }
+
+        .Lesson span {
+            color: #70739e;
+            font-weight: bold;
+        }
+
+        h4.sentences {
+            padding: 4px;
+            color: #0080c5;
+            margin: 0;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .unit {
+            margin-top: 15px;
+        }
+
+        img.title-unit {
+            float: left;
+            width: 70px;
+            height: 30px;
+            margin-right: 15px;
+        }
+
+        .content {
+            color: #10165d;
+            background: url("../../images/image004.png") top center no-repeat;
+            width: 680px;
+            height: 770px;
+            background-size: 100% 100%;
+        }
+
+        .content-container {
+            position: relative;
+            top: 63px;
+            left: 20px;
+            width: 610px;
+            word-spacing: 3px;
+        }
+
+        .content-container p {
+            margin-top: 0;
+            line-height: 19px;
+        }
+
+        span.bottom-b {
+            display: inline-block;
+            width: 98%;
+            border-bottom: 1px solid #e5e5e5;
+            border-top: 1px solid #e5e5e5;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .proofeadingMarks {
+            position: absolute;
+            right: -40px;
+            top: 30px;
+            word-spacing: initial;
+        }
+
+        .proofeadingMarks p {
+            margin: 0;
+            line-height: 24px;
+        }
+
+        .test {
+            position: relative;
+        }
+
+        .top-text {
+            position: absolute;
+            color: #e70073;
+            top: -15px;
+            left: 50%;
+            transform: translate(-50%);
+            font-size: 13px;
+            font-family: 'HelveticaNeue-Bold';
+            font-style: italic;
+        }
+
+        .top-text img {
+            width: 12px;
+            top: -10px;
+            position: absolute;
+            right: -7px;
+            height: 24px;
+        }
+
+        .top-text img.chamthang {
+            width: 5px;
+            top: 0px;
+            right: 0px;
+        }
+
+        .test::before {
+            content: '';
+            background: url("../../images/345.png") center no-repeat;
+            display: inline-block;
+            /*border: 1px solid #e70073;*/
+            position: absolute;
+            left: -4px;
+            right: 0;
+            top: 50%;
+            width: 108%;
+            height: 2px;
+        }
+
+        .test::after {
+            content: '';
+            background: url(../../images/123-1.png) center no-repeat;
+            display: inline-block;
+            background-size: 100% 100%;
+            position: absolute;
+            height: 23px;
+            width: 16px;
+            right: -15px;
+            top: -11.6px;
+        }
+
+        img.bottom-images {
+            position: absolute;
+            top: 13px;
+            right: -6px;
+            width: 12px;
+        }
+
+        .t1:after {
+            content: '';
+            width: 0px;
+        }
+
+        /*.t1 img.bottom-images{*/
+        /*right:0;*/
+        /*}*/
+
+        .t1 .top-text {
+            transform: translate(-80%);
+        }
+
+        .t3:before {
+            content: '';
+            width: 0px;
+        }
+        .t3::after{
+            content: '';
+            background: url("../../images/123-4.png") center no-repeat;
+            background-size: 100% 100%;
+            width: 30px;
+            left: 5px;
+            height: 17px;
+            top: -5px;
+        }
+        .t3 .top-text img.chamthang{
+            top: -3px;
+            right: -5px;
+        }
+
+        .t3 img.chamhoi{
+            width: 12px;
+            top: -7px;
+            position: absolute;
+            right: -7px;
+            height: 24px;
+        }
+
+        .t2::after {
+            background: url(../../images/123-2.png) center no-repeat;
+            background-size: 100% 100%;
+            right: -18px;
+        }
+
+        .t2 img.chamthang {
+            top: -6px;
+            right: 0px;
+        }
+
+        .t2 img.bottom-images {
+            top: 18px;
+            right: -3px;
+        }
+
+        .test img.gachcheo {
+            position: absolute;
+            width: 12px;
+        }
+
+        .t2 .top-text img.vongtron {
+            right:-3px;
+        }
+
+        .top-text img.vongtron {
+            top: 0;
+            width: 15px;
+            height: 15px;
+            right: -13px;
+        }
+
+        .bagach {
+            position: relative;
+        }
+
+        .bagach::after {
+            content: '';
+            background: url(../../images/3gach.png) center no-repeat;
+            background-size: 100% 100%;
+            width: 13px;
+            height: 8px;
+            position: absolute;
+            top: 17px;
+            right: 0px;
+        }
+
+        .b1 {
+            border-top: none !important;
+            border-bottom: none !important;
+        }
+    </style>
+</head>
+<body class="vocabulary-workshop-achieve level-d">
+<div id="pagecontainer">
+    <div class="boxshadow" id="page">
+        <div id="title" class="withline">
+            <div class="toc_name">Unit 1</div>
+        </div>
+        <div class="clear"></div>
+        <div id="content">
+            <img src="../../images/grammar.png" alt="">
+            <div class="unit">
+                <img src="../../images/unit1.png" alt="" class="title-unit">
+                <h4 class="sentences">SentenceS</h4>
+            </div>
+            <div class="clear"></div>
+            <div class="Lesson">
+                <span><b>Proofreading</b> (Lessons 1–7, pp. 8–35)</span>
+            </div>
+            <p><i>Read the paragraphs below. Find the fragment, the run-ons, and the mistakes in the use of capital
+                letters, commas, and end marks. Including the fragment and run-ons, there are 12 mistakes. Use
+                the proofreading marks to correct the mistakes. Count each fragment or run-on as one mistake.</i></p>
+
+            <div class="content">
+                <div class="content-container">
+                    <p><i> <span class="bottom-b" style="width:483px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+                            class="bagach">a</span>re you afraid of spiders? Many people are, but they</span><span
+                            class="bottom-b b1"></span>
+                        <span class="bottom-b" style="width:483px;">might want to change their minds.</span><span
+                                class="bottom-b b1"></span>
+                        <span class="bottom-b" style="width:483px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thousands of different kinds of spiders live all over the</span></i>
+                    </p>
+
+                    <p><i><span class="bottom-b" style="width:483px;">world. Only a few of them have dangerous bites. Although</span><span
+                            class="bottom-b b1"></span>
+                        <span class="bottom-b" style="width:483px;">these truly scary spiders can hurt us<span
+                                class="test t1"><img src="../../images/abc.png" alt="" class="bottom-images"></span> they are actually shy</span><span
+                                class="bottom-b b1"></span>
+                        <span class="bottom-b">little creatures. <span class="test t1"><span class="top-text">Thay</span><img src="../../images/2.png" alt="" class="bottom-images" style="right:0;"></span><span class="test t1"><img src="../../images/00.png" alt="" class="gachcheo"></span>Run away from people most of the time.</span></i>
+                    </p>
+
+                    <p><i><span class="bottom-b">How unfair those horror movies about spiders are.<span class="test t2"><span class="top-text"><img src="../../images/chamthang.png" alt="" class="chamthang"></span><img src="../../images/2.png" alt="" class="bottom-images"></span></span><span class="bottom-b b1"></span>
+                        <span class="bottom-b"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spiders are actually very helpful<span class="test t1"><span class="top-text"><img src="../../images/3.png" alt="" class="vongtron"></span><img src="../../images/2.png" alt="" class="bottom-images"></span> <span class="bagach">m</span>any hunt insects. Others trap</span></i></p>
+                    <p><i><span class="bottom-b">insects in sticky webs. The insects can destroy plants<span class="test t1"><img src="../../images/abc.png" alt="" class="bottom-images"></span> and they can</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b">sometimes spread disease. There are fewer of these insects around</span></i>
+                    </p>
+                    <p><i><span class="bottom-b">because of spiders.</span></i></p>
+                    <p><i><span class="bottom-b"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spider webs are useful<span class="test t1"><span class="top-text"><img src="../../images/3.png" alt="" class="vongtron"></span><img src="../../images/2.png" alt="" class="bottom-images"></span> <span class="bagach">m</span>ost people would agree that they are</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b">also beautiful. Picture a garden early on a summer morning<span class="test t2"><span class="top-text"><img src="../../images/3.png" alt="" class="vongtron"></span><img src="../../images/2.png" alt="" class="bottom-images"></span>! After a</span> </i></p>
+                    <p><i><span class="bottom-b">light rain falls<span class="test t1"><img src="../../images/abc.png" alt="" class="bottom-images"></span> take a look at a spider web. Watch it sparkle in the</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b">sun. What a magical sight it is<span class="test t3"><span class="top-text"><img src="../../images/chamthang.png" alt="" class="chamthang"></span><img src="../../images/2.png" alt="" class="bottom-images"></span>.</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Take another look at spiders the next time you go outside. You</span>
+                    </i></p>
+                    <p><i><span class="bottom-b">can fear them<span class="test t1"><img src="../../images/abc.png" alt="" class="bottom-images"></span> or you can respect them. Which point of view will</span><span class="bottom-b b1"></span>
+                        <span class="bottom-b" style="width:90%;">you choose<span class="test t3"><span class="top-text"><img src="../../images/1hoi.png" alt="" class="chamhoi"></span><img src="../../images/2.png" alt="" class="bottom-images"></span>.</span> </i></p>
+
+                    <div class="proofeadingMarks">
+                        <p>Add</p>
+                        <p>Period</p>
+                        <p>Take out</p>
+                        <p>Capital letter</p>
+                        <p>Small letter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="resourceFooterSection">
+            <div class="program_info">
+                <span class="program_footer_image"></span>
+                <span class="gray_separator"></span>
+                <span class="program_footer_name">Grade 4</span>
+            </div>
+            <div class="footer_copyright">
+                Copyright © by William H. Sadlier, Inc. All rights reserved.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/jquery-ui.js" type="text/javascript"></script>
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/jquery.ba-postmessage.min.js"></script>
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/highlight_digital_resource.js"
+        type="text/javascript"></script>
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/fontsize_digital_resource_v1.2.js"
+        type="text/javascript"></script>
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/one.js" type="text/javascript"></script>
+<script src="//static.assets.sadlierconnect.com/sc-content/javascript/crossdomain_v1.12.js"
+        type="text/javascript"></script>
+
+</body>
+</html>
